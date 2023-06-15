@@ -1,0 +1,50 @@
+﻿@model NoorSubmission.Models.MainFormModel
+@{
+
+    ViewBag.Title = "Writing Main Form Page"; 
+}
+
+ 
+<h1> Main Submission Form : </h1>
+
+
+<form method="post" action="MainForm/MainformIndex">
+
+    <table width="100%" border="0">
+        <tr>
+            <td >
+                <a> First Name : </a>
+                <input name="Fname1" type="text" />
+                
+
+            </td>
+            <td >
+                <a> Last Name : </a>
+                <input name="Lname1" type="text" />
+            </td>
+            <td >
+                <a> Age : </a>  
+                <input name="Age1" type="text" />
+            </td>
+            <td > 
+                @Html.DropDownList("Nationality1" , new SelectList(Enum.GetValues(typeof(NationalitiesList))),
+                "Select Nationality")
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"> <input type="submit" value="Add To DB" id="submitButton" /> </td>
+        </tr>
+         
+        
+
+    </table>
+
+    <a href="@Url.Action("Index", "ReadMainForm")">Read From Database</a>
+
+ </form>
+   
+ 
+ 
+
+
+    

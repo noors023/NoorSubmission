@@ -1,0 +1,36 @@
+﻿@model List<MainFormModel>
+@{
+
+    ViewBag.Title = "Reading Main Form Page";
+}
+<h1> Reading From DB : </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>First Name </th>
+            <th>Last Name </th>
+            <th>Age </th>
+            <th>Nationality</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr>
+                <td>@person.Fname</td>
+                <td>@person.Lname</td>
+                <td>@person.Age</td>
+                <td>@person.Nationality</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+<form method="post" action="@Url.Action("Delete", "ReadMainForm")">
+    <input type="submit" value="Remove All From DB" id="submitButton" />
+
+</form>
+ 
+<a href="@Url.Action("MainformIndex", "MainForm")"> Go back  </a>
