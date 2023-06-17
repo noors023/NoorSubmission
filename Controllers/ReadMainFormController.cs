@@ -27,7 +27,7 @@ namespace NoorSubmission.Controllers
                     dbContext2.Forms.Remove(form);
                     }
                 //reset id of the table to start from 1
-                dbContext2.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('Forms', RESEED, 1);");
+                dbContext2.Database.ExecuteSqlRaw("DBCC CHECKIDENT ('Forms', RESEED, 0);");
                 dbContext2.SaveChanges();
                 }
             

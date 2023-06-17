@@ -11,7 +11,7 @@ using NoorSubmission.Models;
 namespace NoorSubmission.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230614181644_InitialCreate")]
+    [Migration("20230617180413_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

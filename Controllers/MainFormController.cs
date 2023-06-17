@@ -7,7 +7,7 @@ namespace NoorSubmission.Controllers
     {
 
         //GET: MainForm/MainformIndex
-         
+        
         public IActionResult MainFormIndex(IFormCollection FormInputs)
         { 
            if (FormInputs["Fname1"].Count > 0 && !FormInputs["Fname1"].Equals("") && !FormInputs["Nationality1"].Equals("Select Nationality") && !FormInputs["Nationality1"].Equals(""))
