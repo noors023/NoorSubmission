@@ -1,4 +1,5 @@
 using NoorSubmission.Controllers;
+using System.Security.Policy;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,12 +24,13 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-  name: "default",
+  name: "MainForm",
   pattern: "{controller=MainForm}/{action=MainformIndex}/{id?}" );
 
 app.MapControllerRoute(
-  name: "default",
+  name: "Read",
   pattern: "{controller=ReadMainForm}/{action=Index}/{id?}");
 
+ 
 
 app.Run();

@@ -3,12 +3,15 @@
 
     ViewBag.Title = "Reading Main Form Page";
 }
-<h1> Reading From DB : </h1>
 
-<table>
+<h4 class="mb-3 Title"> Submitted Forms </h4>
+<table class="persons-table">
+   
+
     <thead>
         <tr>
-            <th>First Name </th>
+            <th >ID </th>
+            <th >First Name</th>
             <th>Last Name </th>
             <th>Age </th>
             <th>Nationality</th>
@@ -17,20 +20,22 @@
     <tbody>
         @foreach (var person in Model)
         {
-            <tr>
-                <td>@person.Fname</td>
-                <td>@person.Lname</td>
-                <td>@person.Age</td>
-                <td>@person.Nationality</td>
+            <tr class="ReadData">
+                <td >@person.MainFormModelId</td>
+                <td >@person.Fname</td>
+                <td >@person.Lname</td>
+                <td >@person.Age</td>
+                <td >@person.Nationality</td>
             </tr>
         }
     </tbody>
 
 
-</table>
-<form method="post" action="@Url.Action("Delete", "ReadMainForm")">
-    <input type="submit" value="Remove All From DB" id="submitButton" />
+</table> 
+    <form class="DeleteForm" method="post" action="@Url.Action("Delete", "ReadMainForm")">
+        <input class="btn btn-primary ActionButtons" type="submit" value="Remove All From DB" id="submitButton" />
+       
+        <a class="RedirectionLink2" href="@Url.Action("MainformIndex", "MainForm")">&laquo; Insert </a>
 
-</form>
+    </form>
  
-<a href="@Url.Action("MainformIndex", "MainForm")"> Go back  </a>

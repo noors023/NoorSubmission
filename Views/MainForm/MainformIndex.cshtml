@@ -5,43 +5,41 @@
 }
 
  
-<h1> Main Submission Form : </h1>
 
 
-<form method="post" action="MainForm/MainformIndex">
 
-    <table width="100%" border="0">
-        <tr>
-            <td >
-                <a> First Name : </a>
-                <input name="Fname1" type="text" />
-                
+<form class="submission-form" method="post" action=@Url.Action("MainformIndex", "MainForm")>
+    <h4 class="mb-3 "> Submission Form </h4>
+        <div class="form-group">
+            <label for="Fname">First Name </label>
+        <input type="text" name="Fname1" required>
+        </div>
+        <div class="form-group">
+            <label for="Lname">Last Name</label>
+        <input type="text" name="Lname1" required>
+        </div>
 
-            </td>
-            <td >
-                <a> Last Name : </a>
-                <input name="Lname1" type="text" />
-            </td>
-            <td >
-                <a> Age : </a>  
-                <input name="Age1" type="text" />
-            </td>
-            <td > 
-                @Html.DropDownList("Nationality1" , new SelectList(Enum.GetValues(typeof(NationalitiesList))),
-                "Select Nationality")
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"> <input type="submit" value="Add To DB" id="submitButton" /> </td>
-        </tr>
-         
-        
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input type="text" name="Age1" required>
+    </div>
+    <div class="form-group">
+        <label for="Nationality">Nationality</label>
+        @Html.DropDownList("Nationality1" , new SelectList(Enum.GetValues(typeof(NationalitiesList))),
+        "Select Nationality")
+    </div>
 
-    </table>
 
-    <a href="@Url.Action("Index", "ReadMainForm")">Read From Database</a>
+    <button type="submit">Submit</button>
+
+
+    @*<input class="btn btn-primary ActionButtons" type="submit" value="Add To DB" id="submitButton" />*@
+    <a class="RedirectionLink1" href="@Url.Action("Index", "ReadMainForm")"> Read &raquo;</a>
+
 
  </form>
+
+
    
  
  
