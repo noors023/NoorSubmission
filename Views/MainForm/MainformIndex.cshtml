@@ -3,12 +3,8 @@
 
     ViewBag.Title = "Writing Main Form Page"; 
 }
-
  
-
-
-
-<form class="submission-form" method="post" action=@Url.Action("MainformIndex", "MainForm")>
+<form class="submission-form" method="post" action=@Url.Action("AddForm", "MainForm")>
     <h4 class="mb-3 "> Submission Form </h4>
         <div class="form-group">
             <label for="Fname">First Name </label>
@@ -28,12 +24,9 @@
         @Html.DropDownList("Nationality1" , new SelectList(Enum.GetValues(typeof(NationalitiesList))),
         "Select Nationality")
     </div>
-
-
+     
     <button type="submit">Submit</button>
 
-
-    @*<input class="btn btn-primary ActionButtons" type="submit" value="Add To DB" id="submitButton" />*@
     <a class="RedirectionLink1" href="@Url.Action("Index", "ReadMainForm")"> Read &raquo;</a>
 
 

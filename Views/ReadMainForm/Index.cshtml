@@ -1,4 +1,4 @@
-﻿@model List<MainFormModel>
+﻿@model List<NoorSubmission.Models.MainFormModel>
 @{
 
     ViewBag.Title = "Reading Main Form Page";
@@ -32,10 +32,14 @@
 
 
 </table> 
-    <form class="DeleteForm" method="post" action="@Url.Action("Delete", "ReadMainForm")">
-        <input class="btn btn-primary ActionButtons" type="submit" value="Remove All From DB" id="submitButton" />
-       
-        <a class="RedirectionLink2" href="@Url.Action("MainformIndex", "MainForm")">&laquo; Insert </a>
+  
+
+ <form class="DeleteForm" method="post" action="@Url.Action("Delete", "ReadMainForm")">
+        <input class="btn btn-primary ActionButtons" type="submit" value="Remove All From DB" id="submitButton" /> 
+
+    <a class="RedirectionLink2" href="@Url.Action("MainformIndex", "MainForm")">&laquo; Insert </a>
 
     </form>
+
+ 
  
