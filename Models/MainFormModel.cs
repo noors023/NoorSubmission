@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
+//TODO: This has to be removed from here. Move it to API Project.
+
 namespace NoorSubmission.Models
 {
     public class MainFormModel

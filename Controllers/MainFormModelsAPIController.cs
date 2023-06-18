@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NoorSubmission.Models;
 
+//TODO: Please move this to API instead.
 namespace NoorSubmission.Controllers
 {
     [Route("api/[controller]")]
