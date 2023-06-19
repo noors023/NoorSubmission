@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoorSubmission", "NoorSubmission.csproj", "{43E56E36-3415-417B-8160-A0246A1625D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoorSubmission.API", "..\NoorSubmission.API\NoorSubmission.API.csproj", "{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoorSubmission.API", "..\NoorSubmission.API\NoorSubmission.API.csproj", "{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

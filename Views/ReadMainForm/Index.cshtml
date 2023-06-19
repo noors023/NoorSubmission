@@ -1,4 +1,4 @@
-﻿@model List<NoorSubmission.Models.MainFormModel>
+﻿@model List<NoorSubmission.Models.MainFormDto>
 @{
 
     ViewBag.Title = "Reading Main Form Page";
@@ -21,7 +21,7 @@
         @foreach (var person in Model)
         {
             <tr class="ReadData">
-                <td >@person.MainFormModelId</td>
+                <td>@person.MainFormDtoId</td>
                 <td >@person.Fname</td>
                 <td >@person.Lname</td>
                 <td >@person.Age</td>

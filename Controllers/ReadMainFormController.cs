@@ -2,33 +2,61 @@
 using Microsoft.EntityFrameworkCore;
 using NoorSubmission.Models;
 using System.Data.Entity;
+using System.Net.Http;
 
 
 namespace NoorSubmission.Controllers
 { 
     public class ReadMainFormController : Controller
-    {
-        //TODO: You should never inject a controller into your Frontend. If you need to talk to an API you should use HttpClient. This needs to be deleted.
-        private readonly MainFormModelsAPIController Apicontroller;
-
-        public ReadMainFormController(MainFormModelsAPIController Apicontroller2)
-        {
-            Apicontroller = Apicontroller2;
-        }
-
+    {   
+         
         public async Task<IActionResult> Index()
         {
-            //TODO: You should never call a controller action. Use HttpClient to consume an API. 
-            var forms = await Apicontroller.GetForms();
-            return View(forms);
+            using var httpClient = new HttpClient();
+            {
+                var url = "http://localhost:5183/api/Submisson";
+                var response = await httpClient.GetAsync(url);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsAsync<List<MainFormDto>>();
+                    // Handle the content
+                    return View(content);
+                }
+                else
+                {
+                    // Handle the error case
+                    return View("Error");
+                }
+
+            }
+           
         }
 
         public async Task<IActionResult> Delete()
         {
-            //TODO: You should never call a controller action. Use HttpClient to consume an API. 
-            await Apicontroller.DeleteAllData();
-            var forms = await Apicontroller.GetForms();
-            return View("Index" , forms );
+            using var httpClient = new HttpClient();
+            {
+                var url = "http://localhost:5183/api/Submisson";
+                var response = await httpClient.DeleteAsync(url);
+
+                if (response.IsSuccessStatusCode)
+                { //returning updated list  
+                    var contentinserted = await response.Content.ReadAsAsync<List<MainFormDto>>();
+                    // Handle the content 
+                    return View("Index" , contentinserted);
+                }
+                else
+                {
+                    // Handle the error case
+                    return View("Error");
+                }
+            }
+            
         }
+
+
+
+
     }
 }
