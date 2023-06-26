@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="06/21/2023 10:35:09" ReportInfo.Modified="06/26/2023 10:59:57" ReportInfo.CreatorVersion="2022.2.0.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="Forms" ReferenceName="Forms" DataType="System.Int32" Enabled="true">
+      <Column Name="Fname" DataType="System.String"/>
+      <Column Name="Lname" DataType="System.String"/>
+      <Column Name="Age" DataType="System.String"/>
+      <Column Name="Nationality" DataType="System.String"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="56.7" Fill.Color="39, 255, 255, 255">
+      <TextObject Name="Text10" Left="500.85" Top="9.45" Width="274.05" Height="18.9" IsIntersectedWithOtherObject="true" Text="[Date]" Format="Date" Format.Format="f" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="18.9" Top="9.45" Width="198.45" Height="18.9" Text="Submitted Forms " Font="Arial Black, 12.5pt, style=Underline" TextFill.Color="SteelBlue"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="718.2" Fill.Color="39, 255, 255, 255" CanShrink="true"/>
+    <DataBand Name="Data1" Top="64.7" Width="718.2" Height="160.65" Fill.Color="39, 255, 255, 255" CanGrow="true" DataSource="Forms">
+      <TableObject Name="Table1" Left="9.45" Top="18.9" Width="349.65" Height="85.05" Border.ShadowWidth="1" Border.ShadowColor="53, 105, 105, 105" Border.Lines="All" Border.Width="0.5" Fill.Color="39, 255, 248, 220">
+        <TableColumn Name="Column1" Width="108.68"/>
+        <TableColumn Name="Column2" Width="240.97"/>
+        <TableRow Name="Row1" Height="34.65">
+          <TableCell Name="Cell1" Text="[Forms.Fname]" VertAlign="Center" Font="Segoe UI Symbol, 12pt, style=Bold"/>
+          <TableCell Name="Cell2" Text="[Forms.Lname]" VertAlign="Center" Font="Segoe UI Symbol, 12pt, style=Bold"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="25.2">
+          <TableCell Name="Cell6" Border.Lines="All" Text="Age :" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="SteelBlue"/>
+          <TableCell Name="Cell7" Border.Lines="All" Text="[Forms.Age]" VertAlign="Center" Font="Arial, 10pt"/>
+        </TableRow>
+        <TableRow Name="Row3" Height="25.2">
+          <TableCell Name="Cell11" Border.Lines="All" Text="Nationality :" VertAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="SteelBlue"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="[Forms.Nationality]" VertAlign="Center" Font="Arial, 10pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="229.35" Width="718.2" Height="47.25" Fill.Color="39, 255, 255, 255">
+      <TextObject Name="Text9" Left="292.95" Top="18.9" Width="94.5" Height="18.9" Text="[PageN]" HorzAlign="Center" Font="Arial, 10pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

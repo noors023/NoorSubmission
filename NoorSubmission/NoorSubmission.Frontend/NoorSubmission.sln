@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoorSubmission.Frontend", "NoorSubmission.Frontend.csproj", "{43E56E36-3415-417B-8160-A0246A1625D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoorSubmission.API", "..\NoorSubmission.API\NoorSubmission.API.csproj", "{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43E56E36-3415-417B-8160-A0246A1625D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E56E36-3415-417B-8160-A0246A1625D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E56E36-3415-417B-8160-A0246A1625D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E56E36-3415-417B-8160-A0246A1625D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD7C4A4-B656-4D48-B7C3-FF0BC357873B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E2CB031-8F64-43FD-B4C3-5E1977B41039}
+	EndGlobalSection
+EndGlobal

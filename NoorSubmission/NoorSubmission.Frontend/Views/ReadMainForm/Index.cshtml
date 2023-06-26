@@ -1,0 +1,50 @@
+﻿@model List<NoorSubmission.Models.MainFormDto>
+@{
+
+    ViewBag.Title = "Reading Main Form Page";
+}
+
+<h4 class="mb-3 Title"> Submitted Forms </h4>
+<table class="persons-table">
+
+
+    <thead>
+        <tr>
+            @*<th >ID </th> *@
+            <th>First Name</th>
+            <th>Last Name </th>
+            <th>Age </th>
+            <th>Nationality</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        {
+            <tr class="ReadData">
+                @* <td>@person.MainFormDtoId</td>*@
+                <td>@person.Fname</td>
+                <td>@person.Lname</td>
+                <td>@person.Age</td>
+                <td>@person.Nationality</td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+
+<form class="DeleteForm" method="post" action="@Url.Action("Delete", "ReadMainForm")">
+
+
+    <a class="btn btn-primary  ActionButtons " href="@Url.Action("MainformIndex", "MainForm")"> Insert </a>
+
+    <a class="btn btn-success ActionButtons " href="@Url.Action("GetFormReport", "ReadMainForm")">Download PDF</a>
+    <input class="btn btn-danger ActionButtons" type="submit" value="Remove All " id="submitButton" />
+
+</form>
+
+
+
+
+

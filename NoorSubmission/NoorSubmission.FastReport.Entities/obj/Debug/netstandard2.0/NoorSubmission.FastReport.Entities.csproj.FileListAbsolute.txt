@@ -1,0 +1,10 @@
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\bin\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.deps.json
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\bin\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.dll
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\bin\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.pdb
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.csproj.AssemblyReference.cache
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.AssemblyInfoInputs.cache
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.AssemblyInfo.cs
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.csproj.CoreCompileInputs.cache
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.dll
+C:\Users\NOS023\OneDrive - Diyar United Company\Desktop\NoorSubmissionrar\NoorSubmission.FastReport.Entities\obj\Debug\netstandard2.0\NoorSubmission.FastReport.Entities.pdb
